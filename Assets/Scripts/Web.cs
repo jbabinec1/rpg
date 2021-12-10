@@ -48,7 +48,7 @@ public class Web : MonoBehaviour
     public IEnumerator Login(string email, string password)
     {
 
-        //var user = new UserLoginInfo();
+       
         var user = new UserLoginInfo();
         user.email = email;
         user.password = password;
