@@ -171,7 +171,8 @@ public class PlayerMovement : NetworkBehaviour
             lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             moving = true;
             CmdMove(lastClickedPos, step);
-            CmdLook(angle);
+            //CmdLook(angle);
+            canCLick = true;
 
         }
 
@@ -208,14 +209,14 @@ public class PlayerMovement : NetworkBehaviour
         {
             
             moving = true;
-            CmdLook(angle);
+            //CmdLook(angle);
 
         }
 
         if (moving && (Vector2)transform.position != lastClickedPos)
         {
             float step = walkSpeed * Time.deltaTime;
-            CmdLook(angle);
+           // CmdLook(angle);
             CmdMove(lastClickedPos, step);
 
         }
