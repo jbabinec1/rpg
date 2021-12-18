@@ -52,7 +52,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 969177599
-    locked: 0
+    locked: 1
   - name: base
     uniqueID: 399213297
     locked: 0
